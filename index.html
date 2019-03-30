@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock | Paper | Scissors</title>
+
+    <!--Usual suspects-->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+ 
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    
+    <!-- Moment.js Reference -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+
+</head>
+<body>
+<header class="header m-2 text-center jumbotron">
+    <h1>ROCK-PAPER-SCISSORS</h1>
+    <p id="local-user-name"></p>
+    <p id="connected-viewers"></p>
+</header>
+<div id="game-div" class="container">
+
+    <div class="row text-center my-5 p-2">
+        <div id="r-div" class="rps-img col-md-4"><button id="r-button" class="btn btn-info" value="r">ROCK</button></div>
+        <div id="p-div" class="rps-img col-md-4"><butßton id="p-button" class="btn btn-info" value="p">PAPER</button></div>
+        <div id="s-div" class="rps-img col-md-4"><button id="s-button" class="btn btn-info" value="s">SCISSORS</button></div>
+    </div>
+    <div class="row text-center my-5 p-2">
+        <div id="player-one" class="col-md-6">
+            <h2 id="player-one-name">PLAYER ONE</h2>
+            <img src="#">
+        </div>
+        <div id="player-two" class="col-md-6">
+            <h2 id="player-two-name">PLAYER TWO</h2>
+            <img src="#">
+        </div>
+    </div>
+    <div class="row text-center my-5 p-2">
+        <form id="user-name-form" class="col-12">
+            <input id="user-name" placeholder="user name">
+            <input id="user-name-btn" type="submit">
+        </form>
+        <form id="message-form" class="col-12">
+            <input id="message" placeholder="Talk shiet!" type="text">
+            <input id="user-name-btn" type="submit">
+        </form>
+    </div>
+</div>
+
+<div id="firechat-wrapper"></div>
+
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
